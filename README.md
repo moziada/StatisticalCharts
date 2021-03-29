@@ -9,45 +9,45 @@ Given an image that contains a statistical chart and the color of each category 
 this diagram shows the used functions, functions are pictured by blocks, arrows are descriping which lower functions are used by upper functions.
 
 **legendMask**: this function takes RGB image and returns a binary mask of the legend part.
-<p align='horizontal-center'>
-	<img src="TestCases/C3_1.png" alt="input image">
-	<img src="imgs/legendMask.png" alt="output image">
+<p align='center'>
+	<img src="TestCases/C3_1.png" alt="input image" width="500">
+	<img src="imgs/legendMask.png" alt="output image" width="500">
 </p>
 
 **LegendSegment**: this function takes RGB image and uses a binary mask of the legend part and returnes the legend colors, titles insinde the legend and bounding boxes for the titles of the legend part.
 
 **ExtractPie**: this function takes RGB image i and mask out the pie shape from the image.
-<p align='horizontal-center'>
-	<img src="TestCases/C3_1.png" alt="input image">
-	<img src="imgs/ExtractPie.png" alt="output image">
+<p align='center'>
+	<img src="TestCases/C3_1.png" alt="input image" width="500">
+	<img src="imgs/ExtractPie.png" alt="output image" width="500">
 </p>
 
 **EliminateWhite**: this function takes a masked out pie shape and changes the bright pixels value to black.
-<p align='horizontal-center'>
-	<img src="imgs/ExtractPie.png" alt="input image">
-	<img src="imgs/EliminateWhite.png" alt="output image">
+<p align='center'>
+	<img src="imgs/ExtractPie.png" alt="input image" width="500">
+	<img src="imgs/EliminateWhite.png" alt="output image" width="500">
 </p>
 
 **pieSegment**: this function takes RGB image and mask out the pie shape using ExtractPie & EliminateWhite functions and then creates a binary mask from the masked out pie shape and returns the color and percentage of each component in the pie shape respectively.
 
 **barMask**: this function takes RGB image and returns a binary mask of the bars.
-<p align='horizontal-center'>
-	<img src="TestCases/C2_1.png" alt="input image">
-	<img src="imgs/barMask.png" alt="output image">
+<p align='center'>
+	<img src="TestCases/C2_1.png" alt="input image" width="500">
+	<img src="imgs/barMask.png" alt="output image" width="500">
 </p>
 
 **maskOutBar**: this function takes RGB image and returnes the input image but the bar shapes are replaced with white color (essential to detect the legend).
-<p align='horizontal-center'>
-	<img src="TestCases/C2_1.png" alt="input image">
-	<img src="imgs/maskOutBar.png" alt="output image">
+<p align='center'>
+	<img src="TestCases/C2_1.png" alt="input image" width="500">
+	<img src="imgs/maskOutBar.png" alt="output image" width="500">
 </p>
 
 **barSegment**: this function takes RGB image and returns the colors ond bounding boxes of the bar shapes.
 
 **barMetric**: this function takes RGB image and returns a bounding box of max number in the vertical axis and Y coordinate of max number.
-<p align='horizontal-center'>
-	<img src="TestCases/C2_1.png" alt="input image">
-	<img src="imgs/barMetric.png" alt="output image">
+<p align='center'>
+	<img src="TestCases/C2_1.png" alt="input image" width="500">
+	<img src="imgs/barMetric.png" alt="output image" width="500">
 </p>
 
 **ColorMatch**: this function takes two list of colors, c1 -> bar chart or pie chart colors, c2 -> colors extracted from the legend, the function returns a new list c2indexs behaves like a pointer, for example if c2indexs(i)=j so c1(i) match with c2(j).
@@ -65,31 +65,31 @@ for example:
 main(imread('TestCases/C1_1.png'), 'pie')
 ```
 in case of pie chart the output percentage is a percentage of each component to the whole pie shape, in case of bar chart the output percentage is a percentage of each component to the max number in the vertical axis.
-<p align='horizontal-center'>
-	<img src="TestCases/C1_1.png" alt="input image">
-	<img src="output/pie2.jpg" alt="output image">
+<p align='center'>
+	<img src="TestCases/C1_1.png" alt="input image" width="500">
+	<img src="output/pie2.jpg" alt="output image" width="500">
 </p>
-<p align='horizontal-center'>
-	<img src="TestCases/C1_2.JPG" alt="input image">
-	<img src="output/pie4.jpg" alt="output image">
+<p align='center'>
+	<img src="TestCases/C1_2.JPG" alt="input image" width="500">
+	<img src="output/pie4.jpg" alt="output image" width="500">
 </p>
-<p align='horizontal-center'>
-	<img src="TestCases/C2_1.png" alt="input image">
-	<img src="output/bar1.jpg" alt="output image">
+<p align='center'>
+	<img src="TestCases/C2_1.png" alt="input image" width="500">
+	<img src="output/bar1.jpg" alt="output image" width="500">
 </p>
-<p align='horizontal-center'>
-	<img src="TestCases/C3_1.png" alt="input image">
-	<img src="output/pie1.jpg" alt="output image">
+<p align='center'>
+	<img src="TestCases/C3_1.png" alt="input image" width="500">
+	<img src="output/pie1.jpg" alt="output image" width="500">
 </p>
-<p align='horizontal-center'>
-	<img src="TestCases/C3_2.JPG" alt="input image">
-	<img src="output/pie3.jpg" alt="output image">
+<p align='center'>
+	<img src="TestCases/C3_2.JPG" alt="input image" width="500">
+	<img src="output/pie3.jpg" alt="output image" width="500">
 </p>
-<p align='horizontal-center'>
-	<img src="TestCases/C4_1.jpg" alt="input image">
+<p align='center'>
+	<img src="TestCases/C4_1.jpg" alt="input image" width="500">
 	<img src="output/bar3.jpg" alt="output image">
 </p>
-<p align='horizontal-center'>
-	<img src="TestCases/C4_2.png" alt="input image">
-	<img src="output/bar4.jpg" alt="output image">
+<p align='center'>
+	<img src="TestCases/C4_2.png" alt="input image" width="500">
+	<img src="output/bar4.jpg" alt="output image" width="500">
 </p>
