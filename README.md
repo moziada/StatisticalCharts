@@ -87,7 +87,7 @@ in case of pie chart the output percentage is a percentage of each component to 
 </p>
 <p align='center'>
 	<img src="TestCases/C4_1.jpg" alt="input image" width="400">
-	<img src="output/bar3.jpg" alt="output image">
+	<img src="output/bar3.jpg" alt="output image" width="400">
 </p>
 <p align='center'>
 	<img src="TestCases/C4_2.png" alt="input image" width="400">
