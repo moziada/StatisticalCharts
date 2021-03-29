@@ -1,6 +1,6 @@
 # Reading and Interpreting Statistical Chart
 on this project i tried to extract accurate statical information from Bar and Pie chart images using MATLAB.
-Given an image that contains a statistical chart and the color of each category (i.e. legend), the program extracts statistical information in a textual from and plot it back on the source image.
+Given an image that contains a pie or bar chart and the color of each category (i.e. legend), the program extracts statistical information in a textual from and plot it back on the source image.
 
 ## Functions Structure
 <p align='center'>
@@ -16,7 +16,7 @@ this diagram shows the used functions, functions are pictured by blocks, arrows 
 
 **LegendSegment**: this function takes RGB image and uses a binary mask of the legend part and returnes the legend colors, titles insinde the legend and bounding boxes for the titles of the legend part.
 
-**ExtractPie**: this function takes RGB image i and mask out the pie shape from the image.
+**ExtractPie**: this function takes RGB image and mask out the pie shape from the image.
 <p align='center'>
 	<img src="TestCases/C3_1.png" alt="input image" width="400">
 	<img src="imgs/ExtractPie.png" alt="output image" width="400">
